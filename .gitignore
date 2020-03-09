@@ -1,3 +1,5 @@
+#Se ignora el entorno virtual
+
 Scikit-learn/entorno/
 Scikit-learn/__pycache__/
 Scikit-learn/.vscode/
