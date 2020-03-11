@@ -3,3 +3,6 @@
 Scikit-learn/entorno/
 Scikit-learn/__pycache__/
 Scikit-learn/.vscode/
+
+#Arcihvo que contiene la version de Flask
+requirements.txt

@@ -6,10 +6,13 @@ from flask import jsonify
 
 app = Flask(__name__)
 
-@app.route('/')
+#POSTMAN PARA PRUEBAS
+@app.route('/predict', methods=['GET'])
+def predict():
+    X_test = np.array([-75.59609291130387,6.256489350554492,709812.0,1674223.0,7.0,2019.0,1112.0,6.0,11.0])
+    prediction = model.predict(X_test.reshape(1,-1))
+    return jsonify({'prediccion' : list(prediction)})
 
-def modelo():
+if __name__ == "__main__":
     model = joblib.load('./models/best_model.pkl')
-
-if __name__ == '__main__':
-    app.run()
+    app.run(port=8080)
