@@ -1,9 +1,3 @@
 
-#Se ignora el entorno virtual
-
-Scikit-learn/.vscode/
-Scikit-learn/__pycache__/
-Scikit-learn/.vscode/
-
-#Arcihvo que contiene la version de Flask
+Scikit-learn/data/
 requirements.txt
